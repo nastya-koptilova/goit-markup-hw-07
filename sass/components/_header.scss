@@ -1,11 +1,11 @@
+.page-header::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 .header {
   display: flex;
-
-  &::after {
-    content: "";
-    display: block;
-    border-bottom: 1px solid var(--header-border-color);
-  }
 }
 
 .header__logo {
@@ -88,5 +88,5 @@
   border-radius: 2px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }

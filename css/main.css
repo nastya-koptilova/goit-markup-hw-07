@@ -99,13 +99,14 @@ p {
   overflow: hidden;
 }
 
-.header {
-  display: flex;
-}
-.header::after {
+.page-header::after {
   content: "";
   display: block;
   border-bottom: 1px solid var(--header-border-color);
+}
+
+.header {
+  display: flex;
 }
 
 .header__logo {
@@ -186,7 +187,7 @@ p {
   border-radius: 2px;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .hero {
